@@ -1,10 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  
+	<Authors>Nurzhan Aitbayev</Authors>
+	<Title>Strongly-typed c# primitives to avoid primitive obsession</Title>
+	<Description>Strongly-typed c# primitives to avoid primitive obsession</Description>
+	<PackageProjectUrl>https://github.com/nurzhanme/StrongPrimitives</PackageProjectUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryUrl>https://github.com/nurzhanme/StrongPrimitives</RepositoryUrl>
+	<Copyright>Copyright © Nurzhan Aitbayev</Copyright>
+	<PackageTags>ValueOf;Value;object;valueobject;record;ddd;primitive;obsession</PackageTags>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Version>0.1.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
